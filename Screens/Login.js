@@ -16,6 +16,10 @@ export default function Login() {
     navigation.navigate("Register");
   };
 
+  const logIn = () => {
+    navigation.navigate("Calculator");
+  }
+
   return (
     <Body
       Body={
@@ -29,7 +33,7 @@ export default function Login() {
               <TextInput style={styles.input} placeholder="Email" />
               <Text style={styles.lable}>Password</Text>
               <TextInput style={styles.input} placeholder="Password" />
-              <Pressable style={styles.button}>
+              <Pressable style={styles.button} onPress={logIn}>
                 <Text style={styles.buttonText}>Login</Text>
               </Pressable>
             </View>

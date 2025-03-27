@@ -15,7 +15,7 @@ const App = () => {
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator options={{ headerShown: false }}>
-          <Stack.Screen
+          {/* <Stack.Screen
             name="Login"
             component={Login}
             options={{ headerShown: false }}
@@ -24,8 +24,8 @@ const App = () => {
             name="Register"
             component={Register}
             options={{ headerShown: false }}
-          />
-          {/* <Stack.Screen name="Calculator" component={Calculator} /> */}
+          /> */}
+          <Stack.Screen name="Calculator" component={Calculator} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>

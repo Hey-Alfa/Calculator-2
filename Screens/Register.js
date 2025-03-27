@@ -17,7 +17,9 @@ import Body from "../Component/Body";
 export default function Register() {
   const navigation = useNavigation();
   const handleLogin = () => {
-    navigation.navigate("Login");
+    // navigation.navigate("Login");
+    navigation.navigate("Calculator");
+
   };
   const handleNameChange = (value) => {
     setName(value);
